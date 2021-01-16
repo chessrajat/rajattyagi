@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.327e15c0.chunk.css",
-    "main.js": "./static/js/main.3ccd1b26.chunk.js",
-    "main.js.map": "./static/js/main.3ccd1b26.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.eaf8b6a9.js",
-    "runtime-main.js.map": "./static/js/runtime-main.eaf8b6a9.js.map",
-    "static/css/2.a0b9a8b7.chunk.css": "./static/css/2.a0b9a8b7.chunk.css",
-    "static/js/2.76e9cef1.chunk.js": "./static/js/2.76e9cef1.chunk.js",
-    "static/js/2.76e9cef1.chunk.js.map": "./static/js/2.76e9cef1.chunk.js.map",
-    "static/js/3.8ca38547.chunk.js": "./static/js/3.8ca38547.chunk.js",
-    "static/js/3.8ca38547.chunk.js.map": "./static/js/3.8ca38547.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/2.a0b9a8b7.chunk.css.map": "./static/css/2.a0b9a8b7.chunk.css.map",
-    "static/css/main.327e15c0.chunk.css.map": "./static/css/main.327e15c0.chunk.css.map",
-    "static/js/2.76e9cef1.chunk.js.LICENSE.txt": "./static/js/2.76e9cef1.chunk.js.LICENSE.txt"
+    "main.css": "/rajattyagi/static/css/main.327e15c0.chunk.css",
+    "main.js": "/rajattyagi/static/js/main.28b3e57a.chunk.js",
+    "main.js.map": "/rajattyagi/static/js/main.28b3e57a.chunk.js.map",
+    "runtime-main.js": "/rajattyagi/static/js/runtime-main.67786d73.js",
+    "runtime-main.js.map": "/rajattyagi/static/js/runtime-main.67786d73.js.map",
+    "static/css/2.a0b9a8b7.chunk.css": "/rajattyagi/static/css/2.a0b9a8b7.chunk.css",
+    "static/js/2.617cbf89.chunk.js": "/rajattyagi/static/js/2.617cbf89.chunk.js",
+    "static/js/2.617cbf89.chunk.js.map": "/rajattyagi/static/js/2.617cbf89.chunk.js.map",
+    "static/js/3.8ca38547.chunk.js": "/rajattyagi/static/js/3.8ca38547.chunk.js",
+    "static/js/3.8ca38547.chunk.js.map": "/rajattyagi/static/js/3.8ca38547.chunk.js.map",
+    "index.html": "/rajattyagi/index.html",
+    "static/css/2.a0b9a8b7.chunk.css.map": "/rajattyagi/static/css/2.a0b9a8b7.chunk.css.map",
+    "static/css/main.327e15c0.chunk.css.map": "/rajattyagi/static/css/main.327e15c0.chunk.css.map",
+    "static/js/2.617cbf89.chunk.js.LICENSE.txt": "/rajattyagi/static/js/2.617cbf89.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.eaf8b6a9.js",
+    "static/js/runtime-main.67786d73.js",
     "static/css/2.a0b9a8b7.chunk.css",
-    "static/js/2.76e9cef1.chunk.js",
+    "static/js/2.617cbf89.chunk.js",
     "static/css/main.327e15c0.chunk.css",
-    "static/js/main.3ccd1b26.chunk.js"
+    "static/js/main.28b3e57a.chunk.js"
   ]
 }
