@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.main_app{
+  background-color: white;
+}
+
 .light_button {
   color: #f7f7f9 !important;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -66,6 +70,16 @@ code {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.blog_grid {
+  transition: transform .2s; /* Animation */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+.blog_grid:hover{
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 768px) {
   /* For tablets: */
 }
@@ -74,5 +88,8 @@ code {
   /* For mobile phones: */
   .project_brief {
     margin-top: 20px;
+  }
+  .blog_grid{
+    margin-top: 25px;
   }
 }

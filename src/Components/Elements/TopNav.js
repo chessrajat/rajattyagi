@@ -43,6 +43,9 @@ const NavBarInstance = ({ onSelect, activeKey, ...props }) => {
           <Link to="/portfolio">
             <Nav.Item>Portfolio</Nav.Item>
           </Link>
+          <Link to="/blog">
+            <Nav.Item>Blog</Nav.Item>
+          </Link>
         </Nav>
         <Nav pullRight>
           <Link to="/contact">

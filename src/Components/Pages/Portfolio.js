@@ -34,17 +34,16 @@ const Portfolio = () => {
                 container. some features are authentication, generate password,
                 save passwords.
               </p>
-              <Link
-                to={{
-                  pathname: "https://github.com/chessrajat/upasswords_flask",
-                }}
+              <a
+                href="https://github.com/chessrajat/upasswords_flask"
                 target="_blank"
+                rel="noreferrer"
               >
                 <Button className="light_button">
                   <Icon icon="github" size="lg" />
                   &nbsp;View
                 </Button>
-              </Link>
+              </a>
             </FlexboxGrid.Item>
           </FlexboxGrid>
         </Container>

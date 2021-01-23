@@ -4,23 +4,33 @@ import { Route, Switch } from "react-router-dom";
 import Contact from "./Components/Pages/Contact";
 import Resume from "./Components/Pages/Resume";
 import Portfolio from "./Components/Pages/Portfolio";
+import Blog from "./Components/Pages/Blog";
+import BlogPage from "./Components/Pages/BlogPage";
 
 function App() {
   return (
-    <Switch>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-      <Route path="/resume">
-        <Resume />
-      </Route>
-      <Route path="/portfolio">
-        <Portfolio />
-      </Route>
-      <Route path="/contact">
-        <Contact />
-      </Route>
-    </Switch>
+    <div className={"main_app"}>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/resume">
+          <Resume />
+        </Route>
+        <Route path="/portfolio">
+          <Portfolio />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/blog" exact>
+          <Blog />
+        </Route>
+        <Route path="/blog/:blogname">
+          <BlogPage />
+        </Route>
+      </Switch>
+    </div>
   );
 }
 

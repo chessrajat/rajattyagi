@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container, Icon, Nav, Navbar } from "rsuite";
 import Footer from "../Elements/Footer";
 import TopNav from "../Elements/TopNav";
 
 const Home = () => {
   return (
-    <div style={{ alignContent: "center" }}>
+    <div style={styles.main_div("true")}>
       <Container className="main_container">
         <TopNav />
         {/* Name section */}
@@ -39,16 +38,17 @@ const Home = () => {
         <Container fluid="true" className="section_style">
           <Navbar>
             <Nav>
-              <Link
-                to={{ pathname: "https://github.com/chessrajat" }}
+              <a
+                href="https://github.com/chessrajat"
                 target="_blank"
+                rel="noreferrer"
               >
                 <Icon
                   style={{ marginLeft: "10px", marginRight: "10px" }}
                   icon="github"
                   size="2x"
                 />
-              </Link>
+              </a>
 
               <Icon
                 style={{ marginLeft: "10px", marginRight: "10px" }}
@@ -69,6 +69,12 @@ const Home = () => {
       </Container>
     </div>
   );
+};
+
+const styles = {
+  main_div: (size) => ({
+    alignContent: "center",
+  }),
 };
 
 export default Home;
