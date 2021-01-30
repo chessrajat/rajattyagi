@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome file</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  </head>
+
+  <body class="stackedit">
+    <div class="stackedit__html">
+      <p>
+        <img
+          src="/img/blogs/timer_using_python.jpg"
+          alt="home imge"
+        />
+      </p>
+      <h1 id="timer-in-python-">Timer in Python</h1>
+      <blockquote>
+        <p>
+          30 Jan 2021<br />
+          Python
+        </p>
+      </blockquote>
+      <p>
+        Hey , everyone so. How to build a Timer in python?<br />
+        we will first start by setting up our python virtual environment
+      </p>
+      <ul>
+        <li>create a directoryTimer</li>
+        <li><code>python -m venv venv</code></li>
+      </ul>
+      <p>
+        create a file
+        <a
+          href="https://github.com/chessrajat/Python_MiniProjects/blob/master/Timer/Main.py"
+          target="_blank"
+          >Main.py</a
+        >
+      </p>
+      <p>
+        Before starting you need to install a package
+        <a href="https://pypi.org/project/playsound/" target="_blank"
+          >playsound</a
+        >
+      </p>
+      <pre><code>pip install playsound
+</code></pre>
+      <p>
+        So Now lets start with our function our_timer, it takes seconds as a
+        arguments
+      </p>
+      <pre><code>def  our_timer(seconds):
+	thread =  Thread(target=playsound,args=("./Timer/beep_sound.mp3",), daemon=True)
+	for i in  range(seconds-1, -1, -1):
+		sys.stdout.write("\r Timer : %s"  %i)
+		if i ==  9:
+			thread.start()
+		time.sleep(1)
+		sys.stdout.flush()
+</code></pre>
+      <p>
+        Here we are using thread to run the sound on different thread so , when
+        the sound is running it won’t interrupt our main timer thread.<br />
+        We are also using <code>sys.stdout.flush()</code> to put the new time in
+        the same place as the old one. instead of printing every second in the
+        new line.
+      </p>
+      <p>
+        we can call the function like: <code>our_thread(20)</code> so it will
+        run for 20 seconds.
+      </p>
+      <p>
+        we are calling the function directly lets build a main function that
+        will take argument which function to run the timer
+      </p>
+      <pre><code>if  __name__=="__main__":
+
+    seconds =  int(sys.argv[1])
+    our_timer(seconds)
+</code></pre>
+      <p>Here we are taking one argument as integer .</p>
+      <p>Example :</p>
+      <ul>
+        <li>
+          python
+          <a
+            href="https://github.com/chessrajat/Python_MiniProjects/blob/master/Timer/Main.py"
+            target="_blank"
+            >Main.py</a
+          >
+          30
+        </li>
+        <li>
+          python
+          <a
+            href="https://github.com/chessrajat/Python_MiniProjects/blob/master/Timer/Main.py"
+            target="_blank"
+            >Main.py</a
+          >
+          50
+        </li>
+      </ul>
+      <p>
+        Thank You.<br />
+        If you have any issues or question post them on github issues section of
+        this repository.
+      </p>
+      <p>
+        <a
+          href="https://github.com/chessrajat/Python_MiniProjects/tree/master/Timer"
+          target="_blank"
+          >Github Timer</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
