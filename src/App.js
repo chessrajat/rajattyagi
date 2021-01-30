@@ -6,6 +6,7 @@ import Resume from "./Components/Pages/Resume";
 import Portfolio from "./Components/Pages/Portfolio";
 import Blog from "./Components/Pages/Blog";
 import BlogPage from "./Components/Pages/BlogPage";
+import Page404 from "./Components/Pages/Page404";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="/blog/:blogname">
           <BlogPage />
+        </Route>
+        <Route>
+          <Page404 />
         </Route>
       </Switch>
     </div>

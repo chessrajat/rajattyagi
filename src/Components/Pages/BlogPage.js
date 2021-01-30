@@ -34,7 +34,12 @@ const BlogPage = () => {
           style={{ alignItems: "center" }}
           className="section_style"
         >
-          {content && <span dangerouslySetInnerHTML={{ __html: content }} />}
+          {content && (
+            <span
+              style={{ width: "100%" }}
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          )}
         </Container>
       </Container>
     </div>
