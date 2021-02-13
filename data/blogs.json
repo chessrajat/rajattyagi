@@ -1,12 +1,19 @@
 [
   {
-    "name":"password_generator_using_python",
-    "date":"23 Jan 2021",
-    "category":"python"
+    "name":"create_react_app_with_prettier",
+    "date":"13 Feb 2021",
+    "category":"reactjs"
   },
   {
     "name":"timer_using_python",
     "date":"30 Jan 2021",
     "category":"python"
+  },
+  {
+    "name":"password_generator_using_python",
+    "date":"23 Jan 2021",
+    "category":"python"
   }
+
+  
 ]

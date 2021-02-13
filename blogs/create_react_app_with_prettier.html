@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p><img src="/img/blogs/create_react_app_with_prettier.jpg" alt="home imge"></p>
+<h1 id="setup-reactjs-with-vscode-and-prettier">Setup Reactjs with vscode and prettier</h1>
+<blockquote>
+<p>13 Feb 2021<br>
+Reactjs</p>
+</blockquote>
+<p>Hey everyone , so lets start setting up a new React project in vscode and with prettier extension.<br>
+Lets first create the react project with create-react-app . I am going to name my project <code>reactdesigns</code></p>
+<pre><code>npx create-react-app reactdesigns
+cd reactdesigns
+code .
+</code></pre>
+<p>First it will create the react app  with utility create-react-app for more on this check out this <a href="https://reactjs.org/docs/create-a-new-react-app.html" target="_blank">here</a><br>
+Then we just move into the newly created app and open it in vs code.</p>
+<p>Now You have a working react app in vscode , you can open the integrated terminal in the vs code and run <code>npm start</code> to get your working project open in the browser.</p>
+<h3 id="setting-up-prettier">Setting up Prettier</h3>
+<ul>
+<li>
+<p>Install the extension prettier from the extensions in vscode.</p>
+</li>
+<li>
+<p>Installing dev dependencies for prettier.</p>
+</li>
+<li>
+<p><code>npm i -D eslint-plugin-prettier prettier</code></p>
+</li>
+<li>
+<p>After this you should see these two in <code>package.json</code> file</p>
+</li>
+<li>
+<p>Now create a file in the root directory named <code>.eslintrc</code></p>
+<pre><code>  {
+      "extends": "react-app",
+  	"plugins": ["prettier"],
+  	"rules": {
+  		"prettier/prettier":["error",{
+  		"endOfLine":"auto"
+  		}]
+  	}
+  }
+</code></pre>
+</li>
+</ul>
+<p>Put these above settings in the <code>.eslintrc</code> file.<br>
+Now just needs to create vscode settings so our code will auto format on every save</p>
+<p><img src="/img/blogs/create_react_app_with_prettier/1.png" alt="enter image description here"></p>
+<ul>
+<li>
+<p>Create a folder <code>.vscode</code> in the root directory</p>
+</li>
+<li>
+<p>Inside it create a file <code>settings.json</code></p>
+<pre><code>  {
+  	"editor.formatOnSave": true,
+  	"editor.tabSize": 2,
+  	"editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+</code></pre>
+</li>
+</ul>
+<p>You can change the tabsize as you prefer.<br>
+So that’s it. Now your react project is ready with auto formatting every time your press <code>ctrl+s</code></p>
+<p>Thank You.<br>
+If you have any issues or question post them on github issues section of this repository.</p>
+<p><a href="https://github.com/chessrajat/reactdesigns" target="_blank">Find the project files here</a></p>
+</div>
+</body>
+
+</html>
