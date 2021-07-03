@@ -49,12 +49,17 @@ const Home = () => {
                   size="2x"
                 />
               </a>
-
-              <Icon
-                style={{ marginLeft: "10px", marginRight: "10px" }}
-                icon="stack-overflow"
-                size="2x"
-              />
+              <a
+                href="https://stackoverflow.com/users/9573338/rajat-tyagi"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  style={{ marginLeft: "10px", marginRight: "10px" }}
+                  icon="stack-overflow"
+                  size="2x"
+                />
+              </a>
             </Nav>
             <Nav pullRight>
               <Icon icon="at" />
