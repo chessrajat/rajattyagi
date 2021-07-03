@@ -78,5 +78,10 @@
     "icon_name": "devops.png",
     "text": "Devops",
     "count": 1
+  },
+  {
+    "icon_name": "azure.png",
+    "text": "Azure",
+    "count": 2
   }
 ]
