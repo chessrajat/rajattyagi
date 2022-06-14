@@ -31,7 +31,7 @@ const Resume = () => {
           className="section_style"
         >
           <h2>Education</h2>
-          <p>B.sc Computer Science , University of Delhi, India (2016-2019)</p>
+          <p>B.sc Computer Science , University of Delhi, India</p>
         </Container>
         <Container
           fluid

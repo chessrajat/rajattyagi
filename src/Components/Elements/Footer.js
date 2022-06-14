@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Nav, Navbar } from "rsuite";
 
 const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <Container
       fluid
@@ -15,7 +17,7 @@ const Footer = () => {
     >
       <Navbar style={{ backgroundColor: "#030852", color: "#f7f7f9" }}>
         <Nav>Rajat Tyagi</Nav>
-        <Nav pullRight>&copy;2020-2021. All rights reserved.</Nav>
+        <Nav pullRight>&copy;2020-{year}. All rights reserved.</Nav>
       </Navbar>
     </Container>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Icon, Nav, Navbar } from "rsuite";
+import { Avatar, Container, Icon, Nav, Navbar } from "rsuite";
 import Footer from "../Elements/Footer";
 import TopNav from "../Elements/TopNav";
 
@@ -22,14 +22,12 @@ const Home = () => {
           <img className="profile_pic" src="/img/my.png" alt="my profile" />
           <h2 className="name_intro">Hi, I am Rajat Tyagi</h2>
           <p className="intro_text">
-            Hi, I am a developer works on multiple technologies. This portfolio
-            website is the show case for my work and a blog where i write
-            tutorials and my thoughts. I am here to help you solve your business
-            problems and ease your business processes. I love to work in
-            different technologies because they all give you a different
-            perspective to solve a certain problem.<br></br>
-            And I am looking for more opportunities to work on different
-            projects.
+            Hi, I am a developer/cyber security Enthusiast works on multiple
+            technologies. This portfolio website is the show case for my work
+            and a blog for my thoughts. I am here to help you solve your
+            business problems and ease your business processes. I love to work
+            in different technologies because they all give you a different
+            perspective to solve a certain problem.
           </p>
         </Container>
 
@@ -60,8 +58,29 @@ const Home = () => {
                   size="2x"
                 />
               </a>
+              <a
+                style={{
+                  marginTop: "30px",
+                }}
+                href="https://tryhackme.com/p/Drag0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Avatar
+                  style={{
+                    position: "relative",
+                    top: "8px",
+                    marginLeft: "10px",
+                    marginRight: "10px",
+                    backgroundColor: "#f7f7f9",
+                  }}
+                  circle
+                  size="sm"
+                  src="/img/icons/thm.png"
+                />
+              </a>
             </Nav>
-            <Nav pullRight>
+            <Nav pullRight style={{ marginTop: "5px" }}>
               <Icon icon="at" />
               &nbsp; rajattyagi.coder@gmail.com
             </Nav>

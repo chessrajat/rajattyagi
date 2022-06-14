@@ -23,7 +23,7 @@ const BlogPage = () => {
 
   useEffect(() => {
     getBlogContent();
-  }, []);
+  });
 
   return (
     <div style={{ alignContent: "center" }}>

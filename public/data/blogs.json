@@ -1,5 +1,10 @@
 [
   {
+    "name":"lxd_privilege_escalation",
+    "date":"14 June 2022",
+    "category":"Linux"
+  },
+  {
     "name":"create_react_app_with_prettier",
     "date":"13 Feb 2021",
     "category":"reactjs"
