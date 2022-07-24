@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "rsuite";
+import Typingtest from "../Elements/Projects/Typingtest";
 import Upassword from "../Elements/Projects/Upassword";
 import Wordlistcli from "../Elements/Projects/Wordlistcli";
 import TopNav from "../Elements/TopNav";
@@ -16,6 +17,7 @@ const Portfolio = () => {
         >
           <Upassword />
           <Wordlistcli />
+          <Typingtest />
         </Container>
       </Container>
     </div>

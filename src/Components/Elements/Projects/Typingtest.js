@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Col, FlexboxGrid, Icon } from "rsuite";
 
-const Wordlistcli = () => {
+const Typingtest = () => {
   return (
     <>
       <FlexboxGrid
@@ -12,8 +12,8 @@ const Wordlistcli = () => {
           <img
             className="image_shadow"
             style={{ width: "100%" }}
-            src="/img/projects/wordlistcli.jpg"
-            alt="wordlistcli"
+            src="/img/projects/typingtest.jpg"
+            alt="typing test"
           />
         </FlexboxGrid.Item>
         <FlexboxGrid.Item
@@ -23,10 +23,9 @@ const Wordlistcli = () => {
           sm={12}
         >
           <p>
-            Wordlistcli is the tool to search and download the various category
-            to wordlists to crack hashes, FUZZ subdomains, web directories.
-            Easily search and download it from online archives to use for
-            cracking.
+            A Typing test application build in React js and React suite. This
+            allows you to store the number of tests and the you average test
+            speed locally to track your progress.
           </p>
           <a
             href="https://github.com/chessrajat/wordlistcli"
@@ -38,10 +37,21 @@ const Wordlistcli = () => {
               &nbsp;View
             </Button>
           </a>
+          <a
+            href="https://typing.rajattyagi.in/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ marginLeft: "10px" }}
+          >
+            <Button className="light_button">
+              <Icon icon="send" size="md" />
+              &nbsp;Visit
+            </Button>
+          </a>
         </FlexboxGrid.Item>
       </FlexboxGrid>
     </>
   );
 };
 
-export default Wordlistcli;
+export default Typingtest;
