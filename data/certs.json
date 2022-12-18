@@ -1,0 +1,114 @@
+[
+  {
+    "name":"microsoft az900",
+    "img":"/img/certificates/az900.png",
+    "type":"assesment"
+  },
+  {
+    "name": "hackerrank javascript basics",
+    "img":"/img/certificates/hackerrank_javascript_basics.png",
+    "type":"assesment"
+  },
+  {
+    "name": "hackerrank Problem solving basics",
+    "img":"/img/certificates/hackerrank_problemsolving_basics.png",
+    "type":"assesment"
+  },
+  {
+    "name": "hackerrank python basics",
+    "img":"/img/certificates/hackerrank_python_basics.png",
+    "type":"assesment"
+  },
+  {
+    "name": "hackerrank RestAPI basics",
+    "img":"/img/certificates/hackerrank_restapi_intermediate.png",
+    "type":"assesment"
+  },
+  {
+    "name": "Tryhackme presecurity",
+    "img":"/img/certificates/tryhackme_presecurity.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy web security",
+    "img":"/img/certificates/udemy_web_security.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy nmap",
+    "img":"/img/certificates/udemy_nmap.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy django",
+    "img":"/img/certificates/udemy_django.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy ethical hacking",
+    "img":"/img/certificates/udemy_ethical_hacking.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy Security basics 1",
+    "img":"/img/certificates/udemy_security_basics1.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy Security basics 2",
+    "img":"/img/certificates/udemy_security_basics2.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy Ghidra basics",
+    "img":"/img/certificates/udemy_ghidra_basics.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy javascript ES6",
+    "img":"/img/certificates/udemy_js_es6.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy React and redux",
+    "img":"/img/certificates/udemy_react_redux.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy Electron",
+    "img":"/img/certificates/udemy_electron.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy AWS",
+    "img":"/img/certificates/udemy_aws_essentials.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Udemy GCP",
+    "img":"/img/certificates/udemy_gcp_fundamentals.png",
+    "type":"tech_course"
+  },
+  {
+    "name": "Linkedin first impression",
+    "img":"/img/certificates/great_first_impression.png",
+    "type":"bis_course"
+  },
+  {
+    "name": "Linkedin Leading with innvoation",
+    "img":"/img/certificates/linkedin_leading_with_innovation.png",
+    "type":"bis_course"
+  },
+  {
+    "name": "Linkedin five step creative process",
+    "img":"/img/certificates/linkedin_fivestep_creativeprocess.png",
+    "type":"bis_course"
+  },
+  {
+    "name": "Linkedin business writing",
+    "img":"/img/certificates/linkedin_better_business_writing.png",
+    "type":"bis_course"
+  }
+  
+  
+]
