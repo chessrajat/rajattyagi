@@ -3,11 +3,17 @@ import { Container, FlexboxGrid, Modal, Button } from "rsuite";
 import SkillIcon from "../Elements/SkillIcon";
 import TopNav from "../Elements/TopNav";
 import Footer from "../Elements/Footer";
+import ProgressLine from "rsuite/lib/Progress/ProgressLine";
 
 const Resume = () => {
   const [technicalSkills, setTechnicalSkills] = useState(null);
   const [businessSkills, setBusinessSkills] = useState(null);
-  const [showModal, setShowModal] = useState(false);
+  const [certs, setCerts] = useState(null);
+  const [modelprop, setModelprop] = useState({
+    showModal: false,
+    modelimg: null,
+    modeltext: "",
+  });
 
   const get_data = async () => {
     const tech_data = await fetch("/data/technicalskills.json");
@@ -16,6 +22,9 @@ const Resume = () => {
     const biz_data = await fetch("/data/business_skills.json");
     const biz_json_data = await biz_data.json();
     setBusinessSkills(biz_json_data);
+    const cert_data = await fetch("/data/certs.json");
+    const cert_json_data = await cert_data.json();
+    setCerts(cert_json_data);
   };
 
   useEffect(() => {
@@ -45,7 +54,7 @@ const Resume = () => {
             <b>From:</b> Feb,2020
           </p>
           <p>
-            <b>To:</b> Currently working
+            <b>To:</b> Dec, 2022
           </p>
           <p>
             <b>Designation: </b> Systems Engineer
@@ -60,11 +69,47 @@ const Resume = () => {
           className="section_style"
         >
           <h2>Technical Skills</h2>
+
+          <ProgressLine percent={100} showInfo={false} strokeWidth={2} />
+          <hr></hr>
+          <h3 className="skill_sub">Languages</h3>
           <FlexboxGrid>
             {technicalSkills &&
-              technicalSkills.map((techskills, index) => (
-                <SkillIcon key={index} skills={techskills} />
-              ))}
+              technicalSkills
+                .filter((skill) => skill.type === "language")
+                .map((techskills, index) => (
+                  <SkillIcon key={index} skills={techskills} />
+                ))}
+          </FlexboxGrid>
+          <hr></hr>
+          <h3 className="skill_sub">Frameworks</h3>
+          <FlexboxGrid>
+            {technicalSkills &&
+              technicalSkills
+                .filter((skill) => skill.type === "framework")
+                .map((techskills, index) => (
+                  <SkillIcon key={index} skills={techskills} />
+                ))}
+          </FlexboxGrid>
+          <hr></hr>
+          <h3 className="skill_sub">Dev Tools & Technologies</h3>
+          <FlexboxGrid>
+            {technicalSkills &&
+              technicalSkills
+                .filter((skill) => skill.type === "dev_tools")
+                .map((techskills, index) => (
+                  <SkillIcon key={index} skills={techskills} />
+                ))}
+          </FlexboxGrid>
+
+          <h3 className="skill_sub">Cyber security</h3>
+          <FlexboxGrid>
+            {technicalSkills &&
+              technicalSkills
+                .filter((skill) => skill.type === "cyber")
+                .map((techskills, index) => (
+                  <SkillIcon key={index} skills={techskills} />
+                ))}
           </FlexboxGrid>
         </Container>
 
@@ -88,26 +133,99 @@ const Resume = () => {
           fluid
           className="section_style"
         >
-          <h2>Certification</h2>
+          <h2>Certifications</h2>
+
+          <ProgressLine percent={100} showInfo={false} strokeWidth={2} />
+          <hr></hr>
+          <h3 className="skill_sub">Assesment certs</h3>
           <br></br>
-          <FlexboxGrid>
+          <div id="carousel">
+            {certs &&
+              certs
+                .filter((c) => c.type === "assesment")
+                .map((cr, index) => (
+                  <div class="slide">
+                    <img
+                      src={cr.img}
+                      alt={`${cr.name} certificate`}
+                      width="200px"
+                      onClick={() => {
+                        setModelprop({
+                          showModal: true,
+                          modelimg: cr.img,
+                          modeltext: cr.name,
+                        });
+                      }}
+                    />
+                  </div>
+                ))}
+          </div>
+          <hr></hr>
+          <h3 className="skill_sub">Tech course certs</h3>
+          <br></br>
+          <div id="carousel">
+            {certs &&
+              certs
+                .filter((c) => c.type === "tech_course")
+                .map((cr, index) => (
+                  <div class="slide">
+                    <img
+                      src={cr.img}
+                      alt={`${cr.name} certificate`}
+                      width="200px"
+                      onClick={() => {
+                        setModelprop({
+                          showModal: true,
+                          modelimg: cr.img,
+                          modeltext: cr.name,
+                        });
+                      }}
+                    />
+                  </div>
+                ))}
+          </div>
+
+          <hr></hr>
+          <h3 className="skill_sub">Business course certs</h3>
+          <br></br>
+          <div id="carousel">
+            {certs &&
+              certs
+                .filter((c) => c.type === "bis_course")
+                .map((cr, index) => (
+                  <div class="slide">
+                    <img
+                      src={cr.img}
+                      alt={`${cr.name} certificate`}
+                      width="200px"
+                      onClick={() => {
+                        setModelprop({
+                          showModal: true,
+                          modelimg: cr.img,
+                          modeltext: cr.name,
+                        });
+                      }}
+                    />
+                  </div>
+                ))}
+          </div>
+
+          <Modal size="lg" show={modelprop.showModal}>
             <img
-              src="/img/certificates/az900.png"
-              alt="microsoft az900 certificate"
-              width="200px"
-              onClick={() => setShowModal(true)}
-            />
-          </FlexboxGrid>
-          <Modal show={showModal}>
-            <img
-              src="/img/certificates/az900.png"
+              src={modelprop.modelimg}
               alt="microsoft az900 certificate"
               width="100%"
             />
             <Button
               className="light_button"
               width="100%"
-              onClick={() => setShowModal(false)}
+              onClick={() => {
+                setModelprop({
+                  showModal: false,
+                  modelimg: null,
+                  modeltext: "",
+                });
+              }}
             >
               Close
             </Button>

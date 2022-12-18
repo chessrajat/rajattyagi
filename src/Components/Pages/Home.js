@@ -22,12 +22,15 @@ const Home = () => {
           <img className="profile_pic" src="/img/my.png" alt="my profile" />
           <h2 className="name_intro">Hi, I am Rajat Tyagi</h2>
           <p className="intro_text">
-            Hi, I am a developer/cyber security Enthusiast works on multiple
-            technologies. This portfolio website is the show case for my work
-            and a blog for my thoughts. I am here to help you solve your
-            business problems and ease your business processes. I love to work
-            in different technologies because they all give you a different
-            perspective to solve a certain problem.
+            I am software engineer & Cyber Security enthusiast with a passion
+            for challenges and new idea. I am a professional developer and a
+            problem solver with a proven track record of delivering high
+            quality, technically sound work. I have been working with continuous
+            learning, utilizing advanced technologies and services from day one
+            of my career. My Primary interest include Automation, Penetration
+            Testing and application design and development. I love to work on
+            multiple technologies because it provide different perspective to
+            solve problems. Specialized in python programming Language.
           </p>
         </Container>
 

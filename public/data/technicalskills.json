@@ -1,87 +1,164 @@
 [
   {
-    "icon_name": "python.png",
-    "text": "Python",
-    "count": 1
-  },
-  {
-    "icon_name": "java.png",
-    "text": "Java",
-    "count": 3
-  },
-  {
-    "icon_name": "javascript.png",
-    "text": "Javascript",
-    "count": 0
-  },
-  {
     "icon_name": "html.png",
     "text": "HTML5",
-    "count": 2
+    "count": 2,
+    "type": "language"
   },
   {
     "icon_name": "css.png",
     "text": "CSS3",
-    "count": 3
+    "count": 3,
+    "type": "language"
+  },
+  {
+    "icon_name": "python.png",
+    "text": "Python",
+    "count": 1,
+    "type": "language"
+  },
+  {
+    "icon_name": "java.png",
+    "text": "Java",
+    "count": 3,
+    "type": "language"
+  },
+  {
+    "icon_name": "javascript.png",
+    "text": "Javascript",
+    "count": 0,
+    "type": "language"
   },
   {
     "icon_name": "node.png",
     "text": "Nodejs",
-    "count": 1
+    "count": 1,
+    "type": "framework"
   },
   {
     "icon_name": "reactjs.png",
     "text": "Reactjs",
-    "count": 1
-  },
-  {
-    "icon_name": "redux.png",
-    "text": "Redux",
-    "count": 2
+    "count": 1,
+    "type": "framework"
   },
   {
     "icon_name": "flask.png",
     "text": "Flask",
-    "count": 3
+    "count": 3,
+    "type": "framework"
   },
   {
-    "icon_name": "firebase.png",
-    "text": "Firebase",
-    "count": 1
+    "icon_name": "django.png",
+    "text": "Django",
+    "count": 1,
+    "type": "framework"
+  },
+  {
+    "icon_name": "rpa.png",
+    "text": "RPA",
+    "count": 3,
+    "type": "dev_tools"
   },
   {
     "icon_name": "docker.png",
     "text": "Docker",
-    "count": 1
+    "count": 1,
+    "type": "dev_tools"
   },
   {
     "icon_name": "git.png",
     "text": "Git",
-    "count": 4
+    "count": 4,
+    "type": "dev_tools"
   },
   {
     "icon_name": "github.png",
     "text": "Github",
-    "count": 1
+    "count": 1,
+    "type": "dev_tools"
   },
   {
     "icon_name": "mongodb.png",
     "text": "MongoDB",
-    "count": 0
-  },
-  {
-    "icon_name": "security.png",
-    "text": "Security",
-    "count": 1
+    "count": 0,
+    "type": "dev_tools"
   },
   {
     "icon_name": "devops.png",
     "text": "Devops",
-    "count": 1
+    "count": 1,
+    "type": "dev_tools"
   },
   {
     "icon_name": "azure.png",
     "text": "Azure",
-    "count": 2
+    "count": 2,
+    "type": "dev_tools"
+  },
+  {
+    "icon_name": "rest_api.png",
+    "text": "Rest API",
+    "count": 1,
+    "type": "dev_tools"
+  },
+  {
+    "icon_name": "firebase.png",
+    "text": "Firebase",
+    "count": 1,
+    "type": "dev_tools"
+  },
+  {
+    "icon_name": "linux.png",
+    "text": "Linux",
+    "count": 3,
+    "type": "cyber"
+  },
+  {
+    "icon_name": "windows.png",
+    "text": "Windows",
+    "count": 1,
+    "type": "cyber"
+  },
+  {
+    "icon_name": "web.png",
+    "text": "Web Testing",
+    "count": 0,
+    "type": "cyber"
+  },
+  {
+    "icon_name": "fuzzing.png",
+    "text": "Fuzzing",
+    "count": 1,
+    "type": "cyber"
+  },
+  {
+    "icon_name": "burp_suite.png",
+    "text": "Burp suite",
+    "count": 0,
+    "type": "cyber"
+  },
+  {
+    "icon_name": "nmap.png",
+    "text": "Nmap",
+    "count": 2,
+    "type": "cyber"
+  },
+  {
+    "icon_name": "networking.png",
+    "text": "Networking",
+    "count": 0,
+    "type": "cyber"
+  },
+  {
+    "icon_name": "wireshark.png",
+    "text": "Wireshark",
+    "count": 0,
+    "type": "cyber"
+  },
+  {
+    "icon_name": "ad.png",
+    "text": "Active Directory",
+    "count": 0,
+    "type": "cyber"
   }
 ]

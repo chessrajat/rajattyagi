@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.main_app{
+.main_app {
   background-color: white;
 }
 
@@ -24,6 +24,7 @@ code {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
+
 .light_button:hover {
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
 }
@@ -52,6 +53,7 @@ code {
 .name_intro {
   margin: 18px;
 }
+
 .intro_text {
   margin: 20px;
   font-size: 1.05rem;
@@ -62,21 +64,30 @@ code {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 25px;
   margin: 15px;
+  align-self: center;
   align-content: center;
   align-items: center;
   border-radius: 10px;
 }
+
+.skill_sub {
+  padding-left: 0.7em;
+  align-self: flex-start !important;
+}
+
 .image_shadow {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .blog_grid {
-  transition: transform .2s; /* Animation */
+  transition: transform 0.2s;
+  /* Animation */
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0 auto;
 }
-.blog_grid:hover{
+
+.blog_grid:hover {
   transform: scale(1.1);
 }
 
@@ -85,11 +96,29 @@ code {
 }
 
 @media only screen and (max-width: 479px) {
+
   /* For mobile phones: */
   .project_brief {
     margin-top: 20px;
   }
-  .blog_grid{
+
+  .blog_grid {
     margin-top: 25px;
   }
+}
+
+#carousel {
+  width: 100%;
+
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+#carousel .slide {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+#carousel .slide:hover {
+  cursor: pointer;
 }

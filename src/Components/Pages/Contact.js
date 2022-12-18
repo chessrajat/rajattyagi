@@ -12,7 +12,8 @@ const Contact = () => {
           style={{ alignItems: "center" }}
           className="section_style"
         >
-          <h3>rajattyagi.coder@gmail.com</h3>
+          <h4>rajattyagi.coder@gmail.com</h4>
+          <h4>rajat498tyagi@gmail.com</h4>
         </Container>
       </Container>
     </div>
