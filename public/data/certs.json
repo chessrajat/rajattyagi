@@ -5,6 +5,16 @@
     "type":"assesment"
   },
   {
+    "name":"TCS python advance",
+    "img":"/img/certificates/tcs_python_advance.png",
+    "type":"assesment"
+  },
+  {
+    "name":"TCS react",
+    "img":"/img/certificates/tcs_react.png",
+    "type":"assesment"
+  },
+  {
     "name": "hackerrank javascript basics",
     "img":"/img/certificates/hackerrank_javascript_basics.png",
     "type":"assesment"
